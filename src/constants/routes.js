@@ -1,0 +1,33 @@
+export const ROUTES = {
+  login: '/login',
+  overview: '/overview',
+  courses: '/courses',
+  placements: '/placements',
+  studentsPlaced: '/students/placed',
+  studentsJobPending: '/students/job-pending',
+  studentsStudying: '/students/studying',
+  studentsAll: '/students/all',
+  partners: '/partners',
+  staff: '/staff',
+  website: '/website',
+  recruiter: '/recruiter',
+  studentTestimonials: '/student-testimonials',
+  video: '/student-testimonials',
+  enrollments: '/enrollments',
+};
+
+export const PAGE_TITLES = {
+  [ROUTES.overview]: 'Dashboard Overview',
+  [ROUTES.courses]: 'Courses',
+  [ROUTES.placements]: 'Placed Students',
+  [ROUTES.studentsPlaced]: 'Placed Students',
+  [ROUTES.studentsJobPending]: 'Job Pending Students',
+  [ROUTES.studentsStudying]: 'Studying Students',
+  [ROUTES.studentsAll]: 'All Students',
+  [ROUTES.partners]: 'Hiring Partners',
+  [ROUTES.staff]: 'Staff & Faculty',
+  [ROUTES.website]: 'Website Map',
+  [ROUTES.recruiter]: 'Recruiter Quotes',
+  [ROUTES.studentTestimonials]: 'Student Testimonials',
+  [ROUTES.enrollments]: 'Course Enrollments',
+};
