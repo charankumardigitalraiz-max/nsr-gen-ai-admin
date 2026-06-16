@@ -8,6 +8,7 @@ import {
   GraduationCap,
   Clock,
   UserCheck,
+  Hourglass,
   Layers,
 } from 'lucide-react';
 import { ROUTES } from '../constants/routes';

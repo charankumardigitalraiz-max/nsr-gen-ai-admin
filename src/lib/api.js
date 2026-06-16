@@ -123,7 +123,17 @@ export async function apiUpload(file) {
 export function resolveUploadUrl(path) {
   if (!path) return ''
   if (path.startsWith('http') || path.startsWith('data:')) return path
-  if (API_ORIGIN) return `${API_ORIGIN}${path}`
+
+  let origin = API_ORIGIN
+  if (!origin && API_BASE.startsWith('http')) {
+    try {
+      origin = new URL(API_BASE).origin
+    } catch {
+      origin = ''
+    }
+  }
+
+  if (path.startsWith('/uploads/') && origin) return `${origin}${path}`
   return path
 }
 
