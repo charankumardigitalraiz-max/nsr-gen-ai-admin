@@ -10,6 +10,7 @@ import {
   ChevronDown,
   GraduationCap,
   Quote,
+  Layers,
   ClipboardList,
 } from 'lucide-react';
 import NavLogo from './NavLogo';
@@ -126,6 +127,12 @@ export default function Sidebar({ counts, onLogout }) {
             icon={BookOpen}
             label="Courses"
             count={getCount('courses')}
+          />
+          <SidebarLink
+            to={ROUTES.training}
+            icon={Layers}
+            label="Training Services"
+            count={getCount('trainingServices')}
           />
 
           <li>

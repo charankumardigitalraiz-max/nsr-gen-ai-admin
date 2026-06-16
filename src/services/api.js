@@ -7,6 +7,7 @@ export const RESOURCE_KEYS = {
   staff: 'staff',
   recruiter: 'testimonials_recruiter',
   video: 'testimonials_video',
+  training: 'training_services',
 }
 
 export async function login(credentials) {

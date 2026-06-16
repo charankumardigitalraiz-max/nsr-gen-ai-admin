@@ -14,6 +14,7 @@ export const ROUTES = {
   studentTestimonials: '/student-testimonials',
   video: '/student-testimonials',
   enrollments: '/enrollments',
+  training: '/training-services',
 };
 
 export const PAGE_TITLES = {
@@ -30,4 +31,5 @@ export const PAGE_TITLES = {
   [ROUTES.recruiter]: 'Recruiter Quotes',
   [ROUTES.studentTestimonials]: 'Student Testimonials',
   [ROUTES.enrollments]: 'Course Enrollments',
+  [ROUTES.training]: 'Training Services',
 };

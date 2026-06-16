@@ -8,7 +8,7 @@ import {
   GraduationCap,
   Clock,
   UserCheck,
-  Hourglass,
+  Layers,
 } from 'lucide-react';
 import { ROUTES } from '../constants/routes';
 
@@ -77,6 +77,10 @@ const PAGE_STATS = {
     stat('Total Submissions', c.enrollments, ClipboardList, 'emerald'),
     stat('New / Unread', c.enrollmentsNew, Clock, 'teal'),
     stat('Active Courses', c.courses, BookOpen, 'forest'),
+  ],
+  [ROUTES.training]: (c) => [
+    stat('Training Services', c.trainingServices, Layers, 'emerald'),
+    stat('Active Courses', c.courses, BookOpen, 'teal'),
   ],
 };
 

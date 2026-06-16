@@ -50,6 +50,15 @@ const WEBSITE_SECTIONS = [
         fields: 'studentName, role, company, quote, videoUrl, avatar',
         adminGap: 'Fully covered',
       },
+      {
+        website: 'Training services',
+        websiteFile: 'content.js → TRAINING_SERVICES',
+        api: 'GET /api/training_services',
+        adminTab: 'Training Services',
+        status: 'admin-ready',
+        fields: 'icon, title, desc, tag, accent, image, imageAlt',
+        adminGap: 'Images served from /uploads/training via backend',
+      },
     ],
   },
   {
@@ -59,7 +68,6 @@ const WEBSITE_SECTIONS = [
       { website: 'Home section CTAs', websiteFile: 'content.js → HOME_SECTION_BANNERS', api: '—', adminTab: '—', status: 'missing', fields: 'src, alt, eyebrow, title, description, ctaLabel, ctaHref' },
       { website: 'About / Contact / Offline hero images', websiteFile: 'AboutPage, ContactPage, OfflineCenterPage', api: '—', adminTab: '—', status: 'missing', fields: 'banner images per page' },
       { website: 'Contact & academy info', websiteFile: 'contact.js', api: '—', adminTab: '—', status: 'missing', fields: 'phone, email, address, hours, social links, WhatsApp' },
-      { website: 'Training services', websiteFile: 'content.js → TRAINING_SERVICES', api: '—', adminTab: '—', status: 'missing', fields: 'icon, title, desc, tag, accent, image' },
       { website: 'Blogs', websiteFile: 'content.js + blogDetails.js', api: '—', adminTab: '—', status: 'missing', fields: 'slug, title, excerpt, sections[], author, tags' },
       { website: 'FAQs', websiteFile: 'HomeFaqSection.jsx', api: '—', adminTab: '—', status: 'missing', fields: 'question, answer pairs' },
       { website: 'Site stats & batch dates', websiteFile: 'HERO_STATS, Footer, Navbar', api: '—', adminTab: '—', status: 'missing', fields: '500+ students, LPA range, batch date text' },

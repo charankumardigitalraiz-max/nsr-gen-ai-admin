@@ -10,11 +10,11 @@ export default defineConfig({
     host: true,
     proxy: {
       '/api': {
-        target: ' http://192.168.0.117:5002',
+        target: 'https://nsr-gen-ai-backend.onrender.com',
         changeOrigin: true,
       },
       '/uploads': {
-        target: ' http://192.168.0.117:5002',
+        target: 'https://nsr-gen-ai-backend.onrender.com',
         changeOrigin: true,
       },
     },

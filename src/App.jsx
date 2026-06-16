@@ -10,6 +10,7 @@ import Testimonials from './pages/Testimonials';
 import Partners from './pages/Partners';
 import Staff from './pages/Staff';
 import Enrollments from './pages/Enrollments';
+import TrainingServices from './pages/TrainingServices';
 import DashboardLayout from './layouts/DashboardLayout';
 import { CheckCircle2, AlertCircle } from 'lucide-react';
 import { ROUTES } from './constants/routes';
@@ -32,6 +33,7 @@ function AppRoutes() {
     staff: 0,
     enrollments: 0,
     enrollmentsNew: 0,
+    trainingServices: 0,
   });
   const [loading, setLoading] = useState(true);
   const [toast, setToast] = useState(null);
@@ -146,6 +148,7 @@ function AppRoutes() {
           <Route path="partners" element={<Partners {...pageProps} />} />
           <Route path="staff" element={<Staff {...pageProps} />} />
           <Route path="enrollments" element={<Enrollments {...pageProps} />} />
+          <Route path="training-services" element={<TrainingServices {...pageProps} />} />
         </Route>
         <Route path="*" element={<Navigate to={ROUTES.overview} replace />} />
       </Routes>
