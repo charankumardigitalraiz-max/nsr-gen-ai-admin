@@ -107,21 +107,22 @@ export default function TrainingServices({ showToast, refreshStats }) {
 
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {services.map((service, idx) => (
-          <div key={service.id || idx} className="admin-item-card overflow-hidden">
-            <div className="aspect-[16/10] bg-slate-100">
+          <div key={service.id || idx} className="admin-item-card flex flex-col">
+            <div className="relative h-40 w-full shrink-0 overflow-hidden bg-slate-100">
               {service.image ? (
                 <img
                   src={resolveUploadUrl(service.image)}
                   alt={service.imageAlt || service.title}
-                  className="h-full w-full object-cover"
+                  className="absolute inset-0 h-full w-full object-cover object-center"
+                  loading="lazy"
                 />
               ) : (
-                <div className="h-full w-full flex items-center justify-center text-xs text-slate-400">
+                <div className="absolute inset-0 flex items-center justify-center text-xs text-slate-400">
                   No image
                 </div>
               )}
             </div>
-            <div className="p-4 flex flex-col gap-2">
+            <div className="flex flex-1 flex-col gap-2 p-4">
               <span className="text-[10px] font-bold uppercase tracking-wider text-[#00a86b]">
                 {service.tag || 'Service'}
               </span>
